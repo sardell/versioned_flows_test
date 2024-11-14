@@ -46,6 +46,87 @@
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
       "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c00685b0-1d96-30f6-a8e9-8a7b3c881fb8",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "AttributesToCSV",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 91.5,
+        "y" : -35.0
+      },
+      "properties" : {
+        "null-value" : "false",
+        "include-core-attributes" : "true",
+        "destination" : "flowfile-attribute",
+        "include-schema" : "false"
+      },
+      "propertyDescriptors" : {
+        "null-value" : {
+          "displayName" : "Null Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "null-value",
+          "sensitive" : false
+        },
+        "include-core-attributes" : {
+          "displayName" : "Include Core Attributes",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "include-core-attributes",
+          "sensitive" : false
+        },
+        "attributes-regex" : {
+          "displayName" : "Attributes Regular Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "attributes-regex",
+          "sensitive" : false
+        },
+        "destination" : {
+          "displayName" : "Destination",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "destination",
+          "sensitive" : false
+        },
+        "include-schema" : {
+          "displayName" : "Include Schema",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "include-schema",
+          "sensitive" : false
+        },
+        "attribute-list" : {
+          "displayName" : "Attribute List",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "attribute-list",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.AttributesToCSV",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.0.0-SNAPSHOT"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
       "identifier" : "74bcb7e5-bec4-30b8-a26a-ff62c8265d01",
       "maxBackoffPeriod" : "10 mins",
       "name" : "GenerateFlowFile",
